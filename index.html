@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Soundboard</title>
+    </head>
+
+    <body>
+        <h1 id="sound">SOUND EFFECTS</h1>
+        <div class="button">
+            <table><tr>
+                <th>coin</th>
+                <th>bell</th>
+                <th>camera</th>
+            </tr>
+            <tr>
+                <td><img src="coin.png" alt="coin image"></td>
+                <td><img src="bell.png" alt="bell image"></td>
+                <td><img src="camera.png" alt="camera image"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onmouseenter="playCoin()">
+                        Coin
+                    </button>
+                </td>
+                <td>
+                    <button onmouseenter="playBell()">
+                        Bell
+                    </button>
+                </td>
+                
+                <td>
+                    <button onmouseenter="playCamera()">
+                        Camera
+                    </button>
+                </td>
+            </tr>
+            </table>
+        </div>
+
+        <section id="audio">
+            <audio id="camera" src="camera.wav"></audio>
+            <audio id="bell" src="bell.wav"></audio>
+            <audio id="coin" src="coin.wav"></audio>
+        </section>
+
+        <script src="soundboard.js"></script>
+    
+    </body>
+</html>
+
